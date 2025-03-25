@@ -1,0 +1,43 @@
+/* 이미지 로딩 중 스켈레톤 효과 */
+.EventPage_event-card img:not([src*="http"]) { /* 이미지가 로드되기 전 (또는 로컬 이미지) */
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  /* 추가:  이미지 영역을 미리 확보 */
+  width: 100%;
+  height: 200px; /* 또는 이미지의 예상 높이에 맞게 조정 */
+  display: block; /* inline-block 보다는 block 권장*/
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* 필요하다면, 완전히 로드된 이미지는 배경 제거 */
+.EventPage_event-card img[src*="http"] { /* http를 포함하는 src를 가진 이미지 (로드 완료) */
+   background: none;
+   animation: none;
+}
+
+/* EventPage.css */
+.EventPage_write-link {
+  padding: 10px 15px;
+  background-color: #b21848 !important; /* !important 사용 */
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#board-write-button{
+  margin-bottom: 100px;
+}
+
+#board-write-button:hover{
+  color:white;
+}

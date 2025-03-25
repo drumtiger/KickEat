@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+body {
+    margin: 0;
+    padding : 0;
+    user-select: none;
+    letter-spacing :0.8px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.all-button:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all-button {
+    position: relative;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    height:36px;
+    line-height:36px;
+    padding:10px 20px 10px 20px;
+    border: 2px solid #b21848;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight:bold;
+    border-radius: 5px;
+}
+.all-button:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    padding:10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #b21848;
+    z-index: -1;
+}
+.all-button:hover:after {
+    width: 80%;
+    height:70%;
+    opacity: 1;
+}
+
+/* General popup styling */
+.interact-popup {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    z-index:13;
+    width: 120px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Exit button styling */
+.interact-exit {
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: color 0.2s;
+}
+
+.interact-exit:hover {
+    color: #ff4f4f;
+}
+
+/* List styling */
+.interact-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.interact-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.interact-item:hover {
+    background-color: #f1f1f1;
+}
+
+.interact-item:active {
+    background-color: #e0e0e0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dm-container {
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 14;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.dm-exit {
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d9534f;
+}
+
+.dm-header {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dm-recipient {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.dm-recipient-label {
+    font-weight: 600;
+}
+
+.dm-recipient-username {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.dm-error {
+    color: red;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.dm-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin:auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.dm-textarea:focus {
+    border-color: black;
+}
+
+.report-container {
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 14;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.report-exit {
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d9534f;
+}
+
+.report-header {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.report-recipient {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.report-recipient-label {
+    font-weight: 600;
+}
+
+.report-recipient-username {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.report-error {
+    color: red;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.report-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.report-textarea:focus {
+    border-color: black;
+}

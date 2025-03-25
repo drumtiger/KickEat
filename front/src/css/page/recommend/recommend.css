@@ -1,0 +1,193 @@
+.top-recommend-container {
+  margin:auto;
+}
+
+.recommend-container {
+  padding-top: 140px;
+  display: flex;
+
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  width: 50vw;
+  max-width:1000px;
+  max-height:500px;
+  height: 25vw;
+  gap: 3vw;
+}
+
+#recommend-list{
+  height: 75px;
+  /* height:15vw; */
+  /* min-height:900px; */
+}
+
+.left-menu-container,
+.right-menu-container {
+  width: 50%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #b21848;
+  border-radius: 100%;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    5px 5px 15px 0px rgba(146, 146, 146, 0.6),
+    2px 2px 5px 0px rgba(145, 145, 145, 0.6);
+}
+
+.menu-image >img {
+  border-radius: 100%;
+}
+
+.menu-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+
+.kickEatListButton {
+  width: 8vw;
+  max-width: 112px;
+  height: 8vw;
+  max-height: 112px;
+  background-size: cover;
+  cursor: pointer;
+  border: 2px solid #b21848;
+  border-radius: 10%;
+}
+
+
+.select-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  width: 60vw;
+  max-width:700px;
+  height: 10vw;
+  max-height:100px;
+  gap: 1vw;
+  margin-top:40px;
+}
+
+.select-menu {
+  width: 8vw;
+  height: 8vw;
+  max-width: 112px;
+  max-height: 112px;
+  border: 2px solid #b21848;
+  border-radius: 100%;
+}
+
+.select-menu > img {
+  border-radius: 100%;
+}
+
+
+#left-select-button-kick, #right-select-button-kick,#left-select-button-eat, #right-select-button-eat{
+  margin-bottom:20px;
+  margin-top:20px;
+  background-color: white;
+}
+
+#left-select-button-kick:hover,#left-select-button-eat:hover, #right-select-button-kick:hover,#right-select-button-eat:hover{
+  color:white;
+  background-color: transparent;
+}
+
+.find-rec-list{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  width:80%;
+  margin:auto;
+  max-width: 900px;
+  min-width: 600px;
+}
+.recommendResult{
+  width:80%;
+  height:260px;
+  margin:auto;
+  padding:20px;
+  border:2px solid #b21848;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.7s;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  3px 3px 10px 0px rgba(139, 139, 139, 0.6),
+  2px 2px 5px 0px rgba(139, 139, 139, 0.6); 
+}
+
+.recommendResult > ul {
+  display:flex;
+  width:100%;
+}
+
+.recommendResult > ul>li {
+  display:flex;
+  width:50%;
+}
+
+.recommendResult>img{
+  width:100%;
+  object-fit: contain;
+  height:150px;
+}
+
+.restaurantName{
+  text-align: center;
+  font-size:19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.restaurantAddress {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom:10px;
+  max-width: 360px;
+}
+#recommend-list > h4 {
+  text-align: center;
+  font-size:24px;
+}
+#locationSearch{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#locationSearchBox {
+  width:400px;
+  height: 30px;
+  text-align: center;
+  margin-bottom:40px;
+}
+.recommendResult:hover{
+  transform: translateY(-10px);
+}

@@ -1,0 +1,334 @@
+.main-container{
+    position: relative;
+    padding-top:150px;
+    max-width: 1650px;
+    margin: auto;
+}
+
+.main-content-title{
+    position: relative;
+    padding-left: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:28px;
+    color:#2c0813;
+    left: -15px;
+}
+
+.main-content-title > p{
+    display: inline;
+    color:#b21848;
+    font-weight: bold;
+}
+
+.slider-container {
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1900px;
+    margin-top: 20px;
+    margin-bottom: 1vw;
+}
+
+.slider-image-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1900px;
+    height: 40vw;
+    max-height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* 슬라이더 내부 요소에도 border-radius 적용 */
+.main-container .slick-slider {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-container .slick-list, 
+.main-container .slick-track {
+    border-radius: 20px;
+}
+
+.slider-image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dots_custom {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: 0;
+}
+
+.dots_custom li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0;
+}
+
+.dots_custom li button {
+    border: none;
+    background: #363636;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    width: 4vw;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.dots_custom li button{
+    background-color: #c79aa8;
+}
+.dots_custom li.slick-active button {
+    background-color: #b21848;
+}
+.main-today{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:40px auto 180px;
+    text-align: center;
+    min-width: 1024px;
+    min-height:340px;
+}
+.main-today ul {
+    height: 40px;
+    padding-top: 20px;
+}
+.main-today li {
+    float: left;
+    line-height: 40px;
+    width: 15%;
+    padding: 0 10px;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 0 10px 0 0;
+}
+.main-today li:nth-child(1) {
+    border-left:0;
+}
+
+.main-today-left:hover, .main-today-right:hover,.main-today-three:hover{
+    transform: translateY(-10px);
+}
+
+.main-today-left, .main-today-right, .main-today-three{
+    width:80%;
+    min-width: 150px;
+    margin:auto;
+    padding: 20px 0;
+    position: relative;
+    border:1px solid #b21848;
+    border-radius:10px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    3px 3px 10px 0px rgba(139, 139, 139, 0.6),
+    2px 2px 5px 0px rgba(139, 139, 139, 0.6);
+    transition: all 0.7s;
+}
+#pop-res-photo, #pop-rev-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pop-img-box{
+    position: relative;
+    height:20vw;
+    z-index: 4;
+}
+
+#medal {
+    position: absolute;
+    width: 20%;
+    top: 2px;
+    left: 0;
+}
+
+.main-today-left>span, .main-today-right>span, .main-today-three>span  {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size:22px;
+    font-weight: bold;
+}
+.main-today-btn>li:hover{
+    cursor: pointer;
+}
+
+.main-today-btn > li:nth-child(1) {
+    position:relative;
+    background-color: white;
+}
+
+.main-today-btn > li:nth-child(2) {
+    position:relative;
+    background-color: white;
+    left:-30px;
+}
+.main-today-btn > li:nth-child(3) {
+    position:relative;
+    background-color: white;
+    left:-60px;
+}
+
+.main-board-container{
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    position: relative;
+    background-color: white;
+    z-index: 4;
+    height:20vw;
+    margin-bottom:50px;
+    padding:10px;
+}
+
+.main-board-box {
+    display:flex;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#main-board-box-tt{
+    font-weight:bold;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #b21848;
+}
+
+.main-board-box>div{
+    text-align: center;
+
+    float:left;
+}
+
+.main-board-box>div:nth-child(1) {
+    width:15%;
+}
+.main-board-box>div:nth-child(2) {
+    width:35%;
+}
+.main-board-box>div:nth-child(3) {
+    width:30%;
+}
+.main-board-box>div:nth-child(4) {
+    width:20%;
+}
+
+
+@media(min-width:1200px){
+    .pop-img-box{
+        height:240px;
+    }
+    .main-board-container {
+        height:240px;
+    }
+
+}
+
+.event-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 8px 20px;
+  border: 2px solid rgb(124, 100, 100);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.event-button:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(178, 24, 72, 0.9);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.countdown-badge.urgent {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.social-share-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.social-share-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #333;
+}
+
+.social-share-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-share-button.kakao {
+  background-color: #FEE500;
+  color: #000;
+}
+
+.social-share-button.facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+.social-share-button.twitter {
+  background-color: #1DA1F2;
+  color: white;
+}

@@ -1,0 +1,55 @@
+/* FaqUpdate.css */
+.FaqUpdate_container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .FaqUpdate_container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .FaqUpdate_form-group {
+    margin-bottom: 20px;
+  }
+  
+  .FaqUpdate_form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .FaqUpdate_form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* padding and border are included in the element's total width and height */
+  }
+  
+  .FaqUpdate_textarea {
+    height: 200px !important; /* Adjust as needed */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .FaqUpdate_submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .FaqUpdate_submit-button:hover {
+    background-color: #4cae4c;
+  }
+  

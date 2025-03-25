@@ -1,0 +1,153 @@
+.checklist-container {
+    position: relative;
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 80%;
+    min-width: 800px;
+    max-width: 900px;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 10px;
+    border:1px, solid #b21848;
+    padding: 30px;
+  }
+  #step{
+    width: 80%;
+  }
+  
+  #checklist-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .all-select-wrapper {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .all-select-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .label-text {
+    margin-left: 8px;
+  }
+  
+  #boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .food-select {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .food-select:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .food-name {
+    margin-left: 8px;
+  }
+  
+  /* 체크박스 커스텀 스타일 */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #b21848;
+    border-color: #b21848;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  #buttons{
+    display: flex;
+  }
+  
+  .save-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #b21848;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #ec3a73;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 1000px) {
+    #boxes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .checklist-container {
+      min-width: 95%;
+      width: 95%;
+      padding: 20px;
+    }
+  
+    #boxes {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #boxes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  

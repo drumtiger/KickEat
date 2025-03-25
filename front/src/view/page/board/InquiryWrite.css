@@ -1,0 +1,161 @@
+/* InquiryWrite.css */
+
+.InquiryWrite_inquiry-write-container {
+    width: 80%;
+    max-width: 800px;
+    /* margin: 50px auto;  원래 margin을 주석처리하거나 변경 */
+    margin: 0 auto; /* 상하 margin은 0, 좌우는 auto로 유지 */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding-top: 10%;  padding-top 대신 position과 top 사용 */
+    position: relative; /* 상대 위치 지정 */
+    top: 20vh;        /* 뷰포트 높이의 10%만큼 아래로 이동 */
+    margin-bottom: 15%;
+
+
+    /* Fade-in 애니메이션 추가 */
+    opacity: 0; /* 초기에는 안 보이게 */
+    transform: translateY(20px); /* 초기 위치를 약간 아래로 */
+    animation: fadeIn 0.5s ease forwards; /* 애니메이션 적용 */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* 최종적으로 보이게 */
+        transform: translateY(0); /* 최종 위치는 원래 위치로 */
+    }
+}
+
+
+
+.InquiryWrite_inquiry-write-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.InquiryWrite_inquiry-write-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.InquiryWrite_inquiry-write-table th,
+.InquiryWrite_inquiry-write-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.InquiryWrite_inquiry-write-table th {
+    width: 150px; /* 작성자, 내용, 비밀번호 라벨 너비 */
+    font-weight: bold;
+}
+
+.InquiryWrite_inquiry-write-input,
+.InquiryWrite_inquiry-write-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* padding, border 포함하여 width 계산 */
+    font-size: 16px;
+}
+
+.InquiryWrite_inquiry-write-textarea {
+    resize: vertical; /* 세로 크기 조절 가능 */
+}
+
+.InquiryWrite_button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+
+
+
+.InquiryWrite_btn-style-list {
+  background-color: white;
+  position: relative;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin-right: 10px;
+  height:45px;
+  line-height:26px;
+  padding:10px 20px;
+  border: 2px solid #b21848;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight:bold;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.InquiryWrite_btn-style-list:hover{
+  color:white;
+}
+
+.InquiryWrite_btn-style-list:after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  padding:5.8px 7px;
+  width: 0px;
+  height: 0px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: #b21848;
+  z-index: -1;
+}
+
+.InquiryWrite_btn-style-list:hover:after {
+  width: 80%;
+  height:34px;
+  opacity: 1;
+}
+
+
+
+.InquiryWrite_btn-style-sign {
+    background-color: white;
+    position: relative;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    margin-right: 10px;
+    height:45px;
+    line-height:26px;
+    padding:10px 20px;
+    border: 2px solid #b21848;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight:bold;
+    border-radius: 5px;
+    z-index: 0;
+  }
+  
+  .InquiryWrite_btn-style-sign:hover{
+    color:white;
+  }
+  
+  .InquiryWrite_btn-style-sign:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    padding:5.8px 7px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #b21848;
+    z-index: -1;
+  }
+  
+  .InquiryWrite_btn-style-sign:hover:after {
+    width: 80%;
+    height:34px;
+    opacity: 1;
+  }
+

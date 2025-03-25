@@ -1,0 +1,314 @@
+/* 전체 페이지 스타일 */
+.mypage-container {
+  position: relative;
+  padding-top: 70px;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 690px;
+  max-width: 900px;
+  overflow: hidden;
+}
+.mypage-container h2 {
+  margin-top: 80px;
+}
+
+/* 테이블 스타일 */
+.mypage-table>ul {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 0.5fr;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mypage-table>ul:first-child>li {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #b21848; /* 테이블 헤더에 색상 적용 */
+}
+.mypage-table li {
+  padding: 10px 5px;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mypage-table ul:hover {
+  background-color: #f5f5f5;
+}
+
+#review-list-table {
+  grid-template-columns: 4fr 4fr 1fr 2fr;
+}
+#board-list-table {
+  grid-template-columns: 3fr 1fr 0.5fr;
+}
+#comment-list-table {
+  grid-template-columns: 4fr 4fr 2fr 1fr;
+}
+#mypage-del-btn {
+  width: 30px;
+  cursor: pointer;
+}
+
+
+/* 페이지네이션 스타일 - 고유한 클래스명으로 변경 */
+.my-pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.my-pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  border-radius: 0;
+  gap: 10px;
+
+}
+
+.my-page-item {
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  color: #333;
+  border-radius: 10px;
+}
+
+.my-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 38px;
+  background-color: #fff;
+  color: #b21848;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  margin-left: -1px; /* 버튼 사이 겹치는 테두리 처리 */
+  position: relative;
+  overflow: hidden;
+  font-size: 1.0em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+
+.my-page-item.active {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+/* 호버 효과 강화 */
+.my-page-link:hover {
+  background-color: #f0f0f0;
+  color: #b21848;
+  z-index: 2;
+}
+
+/* 클릭 효과 (active 상태) */
+.my-page-item.active .my-page-link {
+  background-color: #b21848;
+  color: white;
+  border-color:#b21848;
+  z-index: 3;
+  font-weight: 500;
+}
+
+
+
+.my-page-link:active::after {
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
+
+/* 테이블 및 페이지네이션 위치 고정 */
+.my-pagination-box {
+  position: relative;
+  margin-top: 20px;
+  height: 40px; /* 고정 높이 설정 */
+}
+
+/* 페이지네이션 스타일 */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.page-item {
+  padding: 0;
+  margin: 0;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  min-width: 40px;
+  height: 38px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid #dee2e6;
+  padding: 0;
+  border-radius: 0;
+  margin-left: -1px; /* 버튼 사이 겹치는 테두리 처리 */
+}
+
+/* 첫 번째 버튼의 왼쪽 테두리 */
+.pagination .page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* 마지막 버튼의 오른쪽 테두리 */
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.page-item.active {
+  padding: 0;
+  margin: 0;
+}
+
+.page-item.active .page-link {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #dee2e6;
+  z-index: 3; /* 활성화된 버튼이 다른 버튼 위에 표시되도록 */
+}
+
+.page-link:hover {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.page-item.active .page-link:hover {
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* 차트 스타일 */
+.graph-box {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 테이블 및 페이지네이션 위치 고정 */
+.pagination-box {
+  position: relative;
+  margin-top: 20px;
+  height: 40px; /* 고정 높이 설정 */
+}
+
+/* #b21848 색상 적용 - 테이블 제목과 테이블 헤더에 적용 */
+
+#graph-title {
+  border-bottom: 2px solid #b21848;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.bottom-blank{
+  height: 100px;
+}
+
+/* 개인정보 수정 버튼 스타일 */
+.edit-profile-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.edit-profile-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-profile-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .data-table th,
+  .data-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mypage-container {
+    padding: 10px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    padding: 12px 15px;
+  }
+
+  .page-link {
+    min-width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+}
+

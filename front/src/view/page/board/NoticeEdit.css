@@ -1,0 +1,91 @@
+.notice-edit-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 100px;
+}
+
+.notice-edit-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.notice-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notice-edit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notice-edit-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.notice-edit-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.notice-edit-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 200px;
+    font-size: 14px;
+}
+
+.notice-edit-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notice-edit-submit,
+.notice-edit-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.notice-edit-submit {
+    background-color: #007bff;
+    color: white;
+}
+
+.notice-edit-submit:hover {
+    background-color: #0056b3;
+}
+
+.notice-edit-cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+.notice-edit-cancel:hover {
+    background-color: #545b62;
+}
+
+.notice-edit-input:focus,
+.notice-edit-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}

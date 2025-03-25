@@ -1,0 +1,38 @@
+.terms-of-use-container {
+    max-width: 720px;
+    padding: 24px 12px;
+    padding-top: 120px;
+    margin: 0 auto;
+    color: #2c0813;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.terms-of-use-container p {
+    line-height: 1.5em;
+    color: #2c0813;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.terms-of-use-container h1 {
+    font-size: 1.45em;
+    text-align: center;
+}
+
+.terms-of-use-container h2 {
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.terms-of-use-container h4 {
+    line-height: 1.5em;
+}
+
+.terms-of-use-container ul li {
+    margin-bottom: 10px;
+}
+
+.terms-of-use-container .terms-list li {
+    margin-left: 20px;
+    list-style-type: circle;
+}

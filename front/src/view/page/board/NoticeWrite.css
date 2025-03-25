@@ -1,0 +1,91 @@
+.notice-write-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 100px;
+}
+
+.notice-write-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.notice-write-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notice-write-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notice-write-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.notice-write-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.notice-write-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 200px;
+    font-size: 14px;
+}
+
+.notice-write-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notice-write-submit,
+.notice-write-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.notice-write-submit {
+    background-color: #007bff;
+    color: white;
+}
+
+.notice-write-submit:hover {
+    background-color: #0056b3;
+}
+
+.notice-write-cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+.notice-write-cancel:hover {
+    background-color: #545b62;
+}
+
+.notice-write-input:focus,
+.notice-write-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}

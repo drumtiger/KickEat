@@ -1,0 +1,308 @@
+.free-write, .view-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+#search {
+    max-width: 1200px;
+    min-width: 750px;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+#search>input {
+    margin: 0 10px;
+    height: 40px;
+    border: 2px solid #ccc;
+    transition: all 0.5s;
+}
+#search div {
+    display: block;
+    float: left;
+    padding-top: 20px;
+    transition: all 0.5s;
+}
+#search div:first-child {
+    color: #e55;
+    font-weight: bold;
+    cursor: pointer;
+}
+#total-board-count {
+    float: right;
+}
+#search>input[type=text] {
+    width: 50%;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+#search>input[type=text]:focus {
+    box-shadow: 0px 0px 10px -2px #777;
+}
+#search>input[type=button] {
+    width: 70px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    cursor: pointer;
+}
+#search>input[type=button]:hover {
+    box-shadow: 0px 0px 10px -2px #777;
+}
+.board-list {
+    max-width: 1200px;
+    min-width: 750px;
+    margin: 10px auto;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.free-list-header {
+    font-weight: bold;
+    background-color: #eee;
+}
+.free-list-header, .free-list {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 2px;
+    border-bottom: solid 1px #ddd;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr 3fr;
+}
+.free-list-header>li, .free-list>li {
+    float: left;
+    text-align: center;
+}
+#free-list-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-align: left;
+}
+.write-btn {
+    max-width: 1200px;
+    min-width: 750px;
+    height: 64px;
+    margin: 0 auto;
+}
+.write-btn div {
+    display: block;
+    float: right;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.write-btn div:hover {
+    box-shadow: 0px 0px 10px -2px #777;
+}
+#notice-sticker {
+    display: inline-block;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+    background-color: #e55;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.free-pagination {
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.free-page-item {
+    float: left;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.free-page-item.active {
+    font-weight: bold;
+    color: #b21848;
+}
+.free-page-item:hover {
+    color:#bd3c63;
+}
+
+/* ========== FreeView ========== */
+.view-box {
+    min-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.view-header {
+    min-width: 600px;
+    display: grid;
+    grid-template-columns: 6fr 1.5fr 1.1fr 1fr;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 2px solid #ddd;
+}
+.view-header>div {
+    padding: 0 10px;
+    margin: 10px 0;
+    border-right: 1px solid #eee;
+}
+.view-header>div:last-child {
+    border: none;
+}
+#view-content {
+    padding: 20px;
+    white-space: pre-wrap;
+}
+.image_resized {
+    height: inherit;
+}
+.view-comment {
+    margin: 10px auto;
+    padding: 20px 10px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+.view-comment input, #comment {
+    height: 70px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+#comment {
+    width: calc(100% - 140px);
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+}
+.view-comment input[type=button] {
+    width: 80px;
+    height: 84px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.view-comment input[type=button]:hover {
+    background-color: #eee;
+}
+.comment-list {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.comment {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 240);
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+}
+#comment-writedate {
+    display: inline;
+    color: #aaa;
+    font-size: 0.9em;
+}
+#comment-del-btn {
+    display: inline;
+    padding-right: 10px;
+    float: right;
+    font-weight: bold;
+    color: #ff7d7d;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#comment-del-btn:hover {
+    color: #ff1616;
+}
+
+.view-footer {
+    display: flex;
+    line-height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+#view-writedate {
+    display: inline;
+    color: #aaa;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.view-btn>div {
+    display: inline-block;
+    width: 50px;
+    line-height: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.view-btn>div:hover {
+    background-color: #eee;
+}
+
+/* ========== FreeWrite ==========*/
+.free-write {
+    width: 60%;
+    padding-bottom: 100px;
+}
+.free-write label {
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#title, #content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding-left: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+.editor-container__editor {
+    margin: 10px auto;
+}
+.ck-editor__editable {
+    height: 500px;
+    resize: none;
+}
+
+#list-btn, #write-btn {
+    display: block;
+    float: right;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#list-btn {
+    float: left;
+}
+#write-btn:hover {
+    box-shadow: 0px 0px 10px -2px #999;
+}

@@ -1,0 +1,114 @@
+/* BoardWrite.css */
+.EventWrite_container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 5% 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.EventWrite_container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.EventWrite_custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.EventWrite_custom-table th, .EventWrite_custom-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.EventWrite_custom-table th {
+    background-color: #f5f5f5;
+    text-align: left;
+    width: 20%;
+}
+
+.EventWrite_custom-input, .EventWrite_custom-textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.EventWrite_custom-textarea {
+    min-height: 200px;
+}
+
+/* 버튼 그룹 스타일 (수정) */
+/* .EventWrite_button-group {
+    text-align: right;
+    margin-top: 1.5rem;
+} */
+.EventWrite_button-group {
+  text-align: right; /* 우측 정렬 */
+  margin-top: 1rem;   /* 위쪽 여백 (필요에 따라 조정) */
+  /* margin-bottom: 5rem; */
+}
+
+
+.EventWrite_btn-style {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #b21848;
+    color: #fff;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.EventWrite_btn-style.cancel {
+    background-color: #888;
+}
+
+.EventWrite_btn-style:hover {
+    opacity: 0.8;
+}
+
+
+.EventWrite_btn-delete-file {
+    background-color: #f44336; /* 삭제 버튼 배경색 */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.EventWrite_btn-delete-file:hover {
+    background-color: #d32f2f; /* 호버 시 배경색 변경 */
+}
+
+/* 페이지 전체에 적용할 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* 약간 아래에서 올라오는 효과 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 페이지 컨테이너에 적용 */
+.EventWrite_fade-in {
+    animation: fadeIn 0.7s ease-in-out;
+}

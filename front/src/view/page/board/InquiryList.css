@@ -1,0 +1,248 @@
+/* InquiryList.css */
+.InquiryList_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom:200px;
+    min-width: 850px;
+}
+
+.InquiryList_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1% 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.InquiryList_header-row {
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.InquiryList_col {
+    padding: 0.5rem;
+}
+
+.InquiryList_text-center {
+    text-align: center;
+}
+
+@media (max-width: 0px) {
+    .InquiryList_row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .InquiryList_col {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .InquiryList_header-row {
+        display: none;
+    }
+
+    .InquiryList_data-row > div:not(.InquiryList_col-sm-4) {
+        display: none;
+    }
+
+    .InquiryList_search-write-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .InquiryList_input-group {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .InquiryList_write-button-container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.InquiryList_title-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.InquiryList_thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.InquiryList_pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.InquiryList_page-item {
+    margin: 0 5px;
+}
+
+.InquiryList_page-item.InquiryList_active .InquiryList_page-link {
+    background-color: #b21848;
+    border-color: #b21848;
+    color: white;
+}
+
+.InquiryList_page-link {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.InquiryList_page-link:hover {
+    background-color: #f0f0f0;
+}
+
+.InquiryList_page-item.InquiryList_disabled .InquiryList_page-link {
+    color: #aaa;
+    pointer-events: none;
+    cursor: default;
+}
+
+.InquiryList_write-button-container {
+    width: auto;
+    margin: 0.5rem;
+}
+
+.InquiryList_btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+}
+
+.InquiryList_btn-primary {
+    background-color: #b21848;
+    border-color: #b21848;
+    color: white;
+}
+
+.InquiryList_input-group {
+    width: auto;
+    flex-shrink: 0;
+    margin: 0.5rem;
+}
+
+.InquiryList_form-control {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    margin: 0.5rem;
+}
+
+.InquiryList_btn-outline-secondary {
+    background-color: #b21848;
+    border-color: #b21848;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.InquiryList_btn-outline-secondary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.InquiryList_justify-content-center {
+    justify-content: center !important;
+}
+
+.InquiryList_mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.InquiryList_search-write-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+[id^="inquiry-title-"] {
+    flex: 6;
+    /* text-align: left; */
+  }
+  
+  [id^="inquiry-author-"] {
+    flex: 3;
+    text-align: center;
+  }
+  
+  [id^="inquiry-date-"] {
+    flex: 2;
+    text-align: center;
+  }
+  .InquiryList_accordion-content {
+    padding-top: 10px;
+    box-sizing: border-box;
+    max-width: 80%;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-height: 300px; /* 필요에 따라 조정 */
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    height: 0; /* 초기 높이 0으로 설정 */
+    padding: 0; /* 초기 padding 0으로 설정 */
+    opacity: 0; /* 초기 투명도 0 */
+    transition: height 1s ease-in-out, opacity 0.5s ease-in-out, padding 1s ease-in-out; /* height, padding transition 추가 */
+}
+
+.InquiryList_accordion-content.InquiryList_active {
+    opacity: 1;
+    padding: 10px 0;
+    height: auto;  /* 활성화 시 자동 높이 */
+    max-height: 300px; /*  max-height는 유지 (필요에 따라 조정) */
+    transition: height 1s ease-in-out, opacity 0.5s ease-in-out, padding 1s ease-in-out; /* height, padding transition 추가 */
+    overflow-y: auto;
+}
+
+
+
+.inquiry-write-button {
+    margin-left: 45%;
+    min-width: 65px;
+    text-align: center;
+}
+
+.inquiry-faq-button {
+    
+    min-width: 100px;
+    text-align: center;
+}
+
+.InquiryList_faq-row {
+    background-color: #ECECEC;
+}
+
+.InquiryList_accordion-content.InquiryList_active.single-line {
+    padding-left: 10px; /* 한 줄일 때 들여쓰기 */
+}
+
+.InquiryList_accordion-content.InquiryList_active.multi-line {
+    padding-left: 0;  /* 여러 줄일 때 들여쓰기 없음 */
+}

@@ -1,0 +1,41 @@
+#signupconfirm-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  #imgbox>img{
+    width: 30%;
+  }
+  #imgbox{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+  }
+  #buttons{
+    padding-top: 30px;
+    display: flex;
+  }
+  
+  .finish-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #b21848;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .finish-button:hover {
+    background-color: #ec3a73;
+  }

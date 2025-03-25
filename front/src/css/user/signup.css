@@ -1,0 +1,145 @@
+.signup-container{
+    position: relative;
+	padding-top:20px;
+	padding-bottom:20px;
+	top:150px;
+    margin:0 auto;
+    width:60%;
+    min-width:690px;
+    max-width: 900px;
+	height:850px;
+	background-color: rgb(248, 248, 248);
+	margin-bottom:250px;
+	border-radius: 10px;
+}
+#step{
+	width: 60%;
+	margin: 0 auto;
+	font-size:20px;
+}
+
+#signup-title{
+	text-align:center;
+	font-size:45px;
+	padding-top:40px;
+}
+
+#signup-box {
+	display:grid;
+	grid-template-columns: 2fr 5fr;
+	width:100%;
+	margin-left:10%;
+	
+	margin-top:40px;
+}
+
+#signup-left{
+	margin-left:auto;
+	width:85%;
+	text-align:left;
+}
+
+#idpw{
+	color: #555555;
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+}
+
+#email1, #email2, #email3{
+    width:28%;
+}
+
+#tel1, #tel2, #tel3{
+    width:12%;
+}
+
+#credit1, #credit2, #credit3, #credit4 {
+    width:11%;
+}
+
+.signup-submit {
+	color:white;
+    font-size:25px;
+	display:block;
+	margin:auto;
+	margin-top:20px;
+	width: 45%;
+	border:none;
+	height:50px;
+	cursor:pointer;
+	border-radius:10px;
+	background:#b21848;
+    
+    transition:all 0.6s;
+}
+
+#signup-right > input, #signup-right-two > input {
+	padding:0;
+	margin:0;
+	height:30px;
+	background:transparent;
+	background-color: rgb(260, 260, 260);
+	border: none;
+	border-bottom: 1px solid  #b21848;
+    padding-left:15px;
+    color:#b21848;
+    transition:all 0.7s;
+	border-radius: 10px 10px 10px 10px; 
+}
+
+#signup-right > input:focus, #signup-right-two > input:focus {
+	outline:none;
+	background-color:#eb769b;
+	color:white;
+}
+
+.buttons{
+	border-radius:10px;
+	color:white;
+    font-size:16px;
+	background:#b21848;
+    margin-left:20px;
+    border:none;
+    width:60px;
+	height:30px;
+	line-height:30px;
+	padding:0px;
+	text-align:center;
+    cursor:pointer;
+    transition:all 0.6s;
+}
+
+.buttons:hover{
+	background:#ec3a73;
+}
+
+.signup-submit:hover {
+	background:#ec3a73;
+}
+
+#hidden-height{
+	opacity:0;
+	line-height:30px;
+}
+
+#alert-id, #alert-pw, #alert-name, #alert-pwchk, #alert-email, #alert-tel, #alert-zipcode, #alert-addr, #alert-addrdetail, #alert-credit{
+	padding-left:10px;
+	color:#ED494C;
+	line-height:30px;
+	transition: all 1.0s;
+	font-size:13px;
+}
+
+  
+#addr,
+#addrdetail {
+  width: 47%;
+}
+
+
+.postmodal{
+    position : fixed;
+	border-top:2px solid black;
+	top:10%;
+}
